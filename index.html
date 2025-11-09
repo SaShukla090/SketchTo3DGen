@@ -115,12 +115,12 @@
 <body>
   <div class="page">
     <!-- Title -->
-    <h1>Paper Title Goes Here</h1>
+    <h1>SketchTo3DGen: GenAI Powered Articulation Ready 3D Asset Ideation using 3D Sketches and Audio Descriptions</h1>
 
     <!-- Authors short line -->
     <div class="authors">
-      Author One<sup>1</sup>, Author Two<sup>1</sup>, Author Three<sup>2</sup>, Author Four<sup>3</sup><br />
-      <span><sup>1</sup>Affiliation One &nbsp; | &nbsp; <sup>2</sup>Affiliation Two &nbsp; | &nbsp; <sup>3</sup>Affiliation Three</span>
+      Shivam Ashok Shukla<sup>1</sup>, Raghav Mittal<sup>1</sup>, Lokender Tiwari<sup>1</sup>, Brojeshwar Bhowmick<sup>1</sup><br />
+      <span><sup>1</sup>TCS Research &nbsp;</span>
     </div>
 
     <!-- Abstract -->
@@ -153,7 +153,12 @@ the generation of articulation ready 3D assets.
       <div class="figure-wrapper">
         <img src="figure1.png" alt="Representation figure of the proposed method" />
         <div class="figure-caption">
-          Figure 1: High-level overview / pipeline representation of the proposed approach.
+          Figure 1: SketchTo3DGen pipeline consists of 4 stages. S1 takes hand drawn 3D sketch and an audio description of the asset.
+The speech is transcribed into a prompt. S2, evaluates multiple camera angles on the sketch and selects three informative views
+based on projected sketch length. In S3, a text-to-image generative model generates photo realistic images for top-3 views.
+The three images are presented to the user in VR for visual validation and selection. In S4, the selected image is sent to an
+image-to-3D generative model to generate either a part-aware or monolithic textured mesh which is spawned in the VR scene.
+User can further refine, edit, manipulate the mesh in the headset.
         </div>
       </div>
     </div>
@@ -174,30 +179,30 @@ the generation of articulation ready 3D assets.
       <div class="section-title">Contact</div>
       <div class="contacts">
         <div class="contact-card">
-          <b>Author One</b><br />
-          Affiliation One<br />
-          Email: <a href="mailto:author1@example.com">author1@example.com</a><br />
+          <b>Shivam Ashok Shukla</b><br />
+          TCS Research<br />
+          Email: <a href="mailto:sa.shukla@tcs.com">sa.shukla@tcs.com</a><br />
+          <a href="https://www.linkedin.com/in/shivam-shukla-0a50ab1a2/" target="_blank">LinkedIn</a>
+        </div>
+
+        <div class="contact-card">
+          <b>Raghav Mittal</b><br />
+          TCS Research<br />
+          Email: <a href="mailto:mittal.raghav1@tcs.com">mittal.raghav1@tcs.com</a><br />
           Website / LinkedIn (optional)
         </div>
 
         <div class="contact-card">
-          <b>Author Two</b><br />
-          Affiliation One<br />
-          Email: <a href="mailto:author2@example.com">author2@example.com</a><br />
+          <b>Lokender Tiwari</b><br />
+          TCS Research<br />
+          Email: <a href="mailto:lokender.tiwari@tcs.com">lokender.tiwari@tcs.com</a><br />
           Website / LinkedIn (optional)
         </div>
 
         <div class="contact-card">
-          <b>Author Three</b><br />
-          Affiliation Two<br />
-          Email: <a href="mailto:author3@example.com">author3@example.com</a><br />
-          Website / LinkedIn (optional)
-        </div>
-
-        <div class="contact-card">
-          <b>Author Four</b><br />
-          Affiliation Three<br />
-          Email: <a href="mailto:author4@example.com">author4@example.com</a><br />
+          <b>Brojeshwar Bhowmick</b><br />
+          TCS Research<br />
+          Email: <a href="mailto:author4@example.com">b.bhowmich@tcs.com</a><br />
           Website / LinkedIn (optional)
         </div>
       </div>
