@@ -1,5 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SketchTo3DGen: GenAI Powered Articulation Ready 3D Asset Ideation using 3D Sketches and Audio Descriptions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f7f7f9;
+      color: #222;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 24px 28px 40px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2rem;
+      font-weight: 650;
+      letter-spacing: 0.02em;
+    }
+
+    .authors {
+      margin: 8px 0 20px;
+      font-size: 0.98rem;
+      color: #555;
+    }
+
+    .section-title {
+      margin-top: 28px;
+      margin-bottom: 8px;
+      font-size: 1.15rem;
+      font-weight: 600;
+      border-left: 4px solid #222;
+      padding-left: 8px;
+    }
+
+    .abstract {
+      font-size: 0.98rem;
+      text-align: justify;
+      color: #333;
+    }
+
+    .figure-wrapper {
+      margin: 16px 0;
+      text-align: center;
+    }
+
+    .figure-wrapper img {
+      max-width: 100%;
+      border-radius: 12px;
+      border: 1px solid #eee;
+    }
+
+    .figure-caption {
+      margin-top: 6px;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .video-wrapper {
+      margin: 16px 0;
+    }
+
+    video {
+      width: 100%;
+      max-height: 480px;
+      border-radius: 12px;
+      outline: none;
+      border: 1px solid #eee;
+    }
+
+    .contacts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-top: 10px;
+      font-size: 0.95rem;
+    }
+
+    .contact-card {
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid #e3e3e8;
+      background: #fafafa;
+    }
+
+    .contact-card b {
+      font-size: 0.98rem;
+    }
+
+    a {
+      color: #1a5fff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
 <body>
-  <head>
-    <h1> SketchTo3DGen: GenAI Powered Articulation Ready 3D Asset Ideation using 3D Sketches and Audio Descriptions </h1>   
-  </head>
+  <div class="page">
+    <!-- Title -->
+    <h1>Paper Title Goes Here</h1>
+
+    <!-- Authors short line -->
+    <div class="authors">
+      Author One<sup>1</sup>, Author Two<sup>1</sup>, Author Three<sup>2</sup>, Author Four<sup>3</sup><br />
+      <span><sup>1</sup>Affiliation One &nbsp; | &nbsp; <sup>2</sup>Affiliation Two &nbsp; | &nbsp; <sup>3</sup>Affiliation Three</span>
+    </div>
+
+    <!-- Abstract -->
+    <div>
+      <div class="section-title">Abstract</div>
+      <p class="abstract">
+        We present SketchTo3DGen, a novel system for rapid 3D content
+ideation on a VR headset. SketchTo3DGen combines freehand 3D
+sketching and audio descriptions to generate photo-realistic 3D
+assets on-the-fly. Running on a Meta Quest headset with a Unity
+application, our system leverages remote GPU-accelerated services
+for AI-driven content creation using intuitive inputs. The user
+can draw a 3D sketch in mid-air and describe the intended asset
+verbally; our pipeline transcribes and normalizes the speech into a
+text prompt, selects informative viewpoints of the 3D VR sketch,
+generates corresponding images via a state-of-the-art text-to-image
+model, and finally reconstructs a 3D mesh using an image-to-3D
+generator. The entire workflow is experienced in VR with minimal
+interface elements. We describe the design motivations, technical
+pipeline, and user interaction details of SketchTo3DGen. This VR in-
+headset pipeline, using intuitive inputs in the form of hand-drawn
+3D VR sketch and speech, streamlines 3D modeling, accelerating
+the generation of articulation ready 3D assets.
+      </p>
+    </div>
+
+    <!-- Representation Figure -->
+    <div>
+      <div class="section-title">Method Overview</div>
+      <div class="figure-wrapper">
+        <img src="representation_figure.png" alt="Representation figure of the proposed method" />
+        <div class="figure-caption">
+          Figure 1: High-level overview / pipeline representation of the proposed approach.
+        </div>
+      </div>
+    </div>
+
+    <!-- Demo Video -->
+    <div>
+      <div class="section-title">Demo Video</div>
+      <div class="video-wrapper">
+        <video controls>
+          <source src="demo_video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <!-- Contact Details -->
+    <div>
+      <div class="section-title">Contact</div>
+      <div class="contacts">
+        <div class="contact-card">
+          <b>Author One</b><br />
+          Affiliation One<br />
+          Email: <a href="mailto:author1@example.com">author1@example.com</a><br />
+          Website / LinkedIn (optional)
+        </div>
+
+        <div class="contact-card">
+          <b>Author Two</b><br />
+          Affiliation One<br />
+          Email: <a href="mailto:author2@example.com">author2@example.com</a><br />
+          Website / LinkedIn (optional)
+        </div>
+
+        <div class="contact-card">
+          <b>Author Three</b><br />
+          Affiliation Two<br />
+          Email: <a href="mailto:author3@example.com">author3@example.com</a><br />
+          Website / LinkedIn (optional)
+        </div>
+
+        <div class="contact-card">
+          <b>Author Four</b><br />
+          Affiliation Three<br />
+          Email: <a href="mailto:author4@example.com">author4@example.com</a><br />
+          Website / LinkedIn (optional)
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+</html>
